@@ -27,7 +27,7 @@ public class PresentationActivity extends AppCompatActivity {
 
         btnComenzar.setOnClickListener( new View.OnClickListener() {
             public void onClick(View element) {
-                Intent i=new Intent(getApplicationContext(),LogInActivity.class);
+                Intent i=new Intent(getApplicationContext(),SignInActivity.class);
                 startActivity(i);
             }
         });
