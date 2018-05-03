@@ -8,6 +8,7 @@
 
     <ScrollView
         android:id="@+id/login_form"
+        android:layout_margin="10px"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -31,6 +32,7 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="text"
                     android:maxLines="1"
+                    android:maxLength="20"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
@@ -49,10 +51,38 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="number"
                     android:maxLines="1"
+                    android:maxLength="2"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
+            <RadioGroup
+                android:id="@+id/rdGender"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Género"
+                    />
+                <RadioButton
+                    android:id="@+id/rdMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre" />
+                <RadioButton
+                    android:id="@+id/rdFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer" />
+                <RadioButton
+                    android:id="@+id/rdAlien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alien" />
+            </RadioGroup>
             <Button
                 android:id="@+id/email_sign_in_button"
                 style="?android:textAppearanceSmall"
