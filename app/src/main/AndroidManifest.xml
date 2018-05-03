@@ -14,9 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
         <activity
-            android:name=".FullscreenActivity"
+            android:name=".PresentationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_fullscreen"
             android:theme="@style/FullscreenTheme">
@@ -27,8 +26,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignOnActivity"
-            android:label="@string/title_activity_sign_on"></activity>
+            android:name=".LogInActivity"
+            android:label="@string/title_activity_log_in" />
+        <activity android:name=".SignInActivity"></activity>
     </application>
 
 </manifest>
