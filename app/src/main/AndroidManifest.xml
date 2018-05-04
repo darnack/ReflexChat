@@ -21,14 +21,20 @@
             android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".LogInActivity"
             android:label="@string/title_activity_log_in" />
-        <activity android:name=".SignInActivity"></activity>
+        <activity
+            android:name=".SignInActivity"
+            android:label="Registro">
+        </activity>
+        <activity
+            android:name=".ConfirmActivity"
+            android:label="Confirmación">
+        </activity>
     </application>
 
 </manifest>
