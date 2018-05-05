@@ -18,6 +18,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private EditText txtNickName, txtAge, txtCity;
     private RadioGroup rdGender;
+    //private RadioButton
     private TextView txtGender;
     private Button btnSigIn;
 
@@ -61,15 +62,13 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
 
-                Alert.show(SignInActivity.this, String.valueOf(rdGender.getCheckedRadioButtonId()));
-
                 if(attemptLogin()) {
 
                     CacheManager.writeString(SignInActivity.this, "NickName", txtNickName.getText().toString());
                     CacheManager.writeString(SignInActivity.this, "Age", txtAge.getText().toString());
                     CacheManager.writeString(SignInActivity.this, "City", txtCity.getText().toString());
-                   // String gender = ((RadioButton)findViewById(rdGender.getCheckedRadioButtonId())).getText().toString();
-                    //CacheManager.writeString(SignInActivity.this, "Gender", gender);
+                    String gender = ((RadioButton)findViewById(rdGender.getCheckedRadioButtonId())).getText().toString();
+                    CacheManager.writeString(SignInActivity.this, "Gender", gender);
 
                     Intent i=new Intent(getApplicationContext(),ConfirmActivity.class);
                     startActivity(i);
@@ -94,11 +93,11 @@ public class SignInActivity extends AppCompatActivity {
         boolean cancel = false;
         View focusView = null;
 
-        /*if(rdGender.getCheckedRadioButtonId() == -1) {
+        if(rdGender.getCheckedRadioButtonId() == -1) {
             txtGender.setError(getString(R.string.error_field_required));
             focusView = rdGender;
             cancel = true;
-        }*/
+        }
 
         if (TextUtils.isEmpty(city)) {
             txtCity.setError(getString(R.string.error_field_required));

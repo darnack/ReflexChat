@@ -72,49 +72,41 @@
                 android:singleLine="true" />
 
         </android.support.design.widget.TextInputLayout>
-
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginLeft="6px"
+                android:layout_marginTop="18px"
+                android:text="Género"
+                />
             <RadioGroup
                 android:id="@+id/rdGender"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/txtGender"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="17dp"
-                    android:layout_marginLeft="6px"
-                    android:layout_marginTop="18px"
-                    android:text="Género"
-                    />
-                <TableLayout
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TableRow>
+
                         <RadioButton
                         android:id="@+id/rdMale"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hombre" />
                         <RadioButton
                             android:id="@+id/rdFemale"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mujer" />
                         <RadioButton
                             android:id="@+id/rdDog"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Perro" />
                         <RadioButton
                             android:id="@+id/rdCat"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Gato" />
-                    </TableRow>
-                </TableLayout>
 
             </RadioGroup>
             <Button

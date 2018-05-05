@@ -95,7 +95,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/btn_confirm"
+                android:text="Continuar"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnExit"
+                style="?android:textAppearanceSmall"
+                android:layout_gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:text="Salir"
                 android:textStyle="bold" />
 
         </LinearLayout>
